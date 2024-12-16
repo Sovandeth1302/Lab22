@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Electricity Bill</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="form-header">
+        <img
+          src="./image//Edc_logo_khmer.png"
+          alt="Company Logo"
+          class="logo"
+        />
+        <h1 class="form-title">អគ្គិសនីកម្ពុជា</h1>
+      </div>
+      <h2>ទម្រង់វិក័យបត្រអគ្គិសនី</h2>
+      <div class="form-group">
+        <label for="username">ឈ្មោះអតិថិជន:</label>
+        <input type="text" id="username" placeholder="បំពេញឈ្មោះ" />
+      </div>
+      <div class="form-group">
+        <label for="user-id">លេខសម្គាល់អតិថិជន:</label>
+        <input type="text" id="user-id" placeholder="បំពេញលេខសម្គាល់" />
+      </div>
+      <div class="form-group">
+        <label for="old-value">អំណានចាស់់:</label>
+        <input type="number" id="old-value" placeholder="បញ្វូលលខអំណានចាស់់"/>
+      </div>
+      <div class="form-group">
+        <label for="new-value">អំណានថ្មី:</label>
+        <input type="number" id="new-value"placeholder="បញ្វូលលខអំណានថ្មី"/>
+      </div>
+      <div class="form-group">
+        <label class="inline"
+          ><input type="checkbox"id="include-trash"onchange="toggleTrashOptions()"/>
+          រួមបញ្ចូលថ្លៃសំរាម</label>
+        <label class="inline"
+          ><input type="radio" name="trash-bill" value="10000" disabled />
+          10,000 R</label
+        >
+        <label class="inline"
+          ><input type="radio" name="trash-bill" value="20000" disabled />
+          20,000 R</label
+        >
+        <label class="inline"
+          ><input type="radio" name="trash-bill" value="30000" disabled />
+          30,000 R</label
+        >
+      </div>
+      <button onclick="generateInvoice()">គណនា</button>
+      <div class="invoice-container" id="invoice">
+        <h2>វិកាយ័បត្រ</h2>
+        <p>មិនមានទិន្នន័យ.</p>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

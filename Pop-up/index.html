@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Electricity Bill</title>
+  </head>
+  <body>
+    <div class="form-container">
+        <img src="image/Edc_logo_khmer.png" alt="Company Logo" class="logo">
+        <h2>អគ្គិសនីកម្ពុជា</h2>
+        <button onclick="startForm()">បញ្ចូលពត៌មាន</button>
+        <div class="invoice-container" id="invoice">
+          <h2>វិក័យបត្រ</h2>
+          <p>មិនទាន់មានវិក័យបត្រ</p>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <h3 id="modal-title"></h3>
+        <div id="modal-input-container">
+          <input type="text" id="modal-input" />
+        </div>
+        <div class="modal-buttons">
+          <button onclick="submitModal()">យល់ព្រម</button>
+          <button onclick="cancelModal()">ចាកចេញ</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

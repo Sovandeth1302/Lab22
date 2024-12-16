@@ -1,0 +1,120 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+  }
+
+  .form-container {
+    width: 50%;
+    margin: 0 auto;
+    background: #eeeeee;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+  }
+
+  .form-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .logo {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+
+  .form-title {
+    font-size: 25px;
+    font-weight: bolder;
+    color: #333;
+    margin: -10px;
+  }
+
+  h2 {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .form-group {
+    width: 97.5%;
+    margin-bottom: 15px;
+  }
+
+  label {
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+
+  label.inline {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: #0056b3;
+  }
+
+  .invoice-container {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #fdfdfd;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+
+  .invoice-container h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .invoice-container p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+  }
+
+  .invoice-container strong {
+    color: #282828;
+  }

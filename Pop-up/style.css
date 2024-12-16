@@ -1,0 +1,129 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .logo {
+    display: block;
+    margin: 0 auto 20px; 
+    width: 100px; 
+    height: auto; 
+   }
+
+  .form-container {
+    width: 50%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+
+  .invoice-container {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #fdfdfd;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+
+  .invoice-container h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .invoice-container p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+  }
+
+  .invoice-container strong {
+    color: #000;
+  }
+
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  button:hover {
+    background: #0056b3;
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s;
+  }
+
+  .modal.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .modal-content h3 {
+    margin: 0 0 10px;
+    color: #333;
+  }
+
+  .modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+
+  .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .modal-buttons button {
+    flex: 1;
+    margin: 5px;
+  }
